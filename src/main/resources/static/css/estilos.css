@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 90px 20px 0;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 80px 20px 0px; 
+}
+.aside {
+    position: fixed;
+    background-color: aquamarine;    
+    top: 20%;
+    left: 0;
+    bottom: 20px;
+    height: 20%
+}
+
+.section {
+    overflow-y: scroll;
+    position: fixed;
+    background-color: bisque;    
+    top: 80px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%;
+    height: 75%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 5%;        
+    text-align: center;
+    background-color: yellow;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: blue;
+    color: white
+}
+
+tbody tr:nth-child(even) {
+    background-color: black;
+    color: white
+}
