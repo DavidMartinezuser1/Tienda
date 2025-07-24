@@ -86,4 +86,16 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
 
+    @PostMapping("/query4")
+    public String consultaPorExistencias(@RequestParam("min") int min,
+                                         @RequestParam("max") int max,
+                                         Model model) {
+        var productos = productoService.findByExistenciasBetweenOrderByDescripcion(min, max);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("min", min);
+        model.addAttribute("max", max);
+        return "/pruebas/listado2";
+    }
+
 }

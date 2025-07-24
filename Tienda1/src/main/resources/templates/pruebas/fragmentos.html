@@ -154,7 +154,29 @@
                 </div>
             </form>
         </div>
+        <form method="POST" th:action="@{/pruebas/query4}" class="was-validated">
+            <div class="card mt-4 mx-auto" style="max-width: 400px;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Consulta por Existencias</h5>
 
+                    <div class="mb-3">
+                        <label class="form-label">Existencias mínimas:</label>
+                        <input type="number" name="min" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Existencias máximas:</label>
+                        <input type="number" name="max" class="form-control" required>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success btn-sm">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
