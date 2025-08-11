@@ -14,9 +14,13 @@ public class Venta implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_venta")
     private Long idVenta;
+    @Column(name="id_factura")
     private Long idFactura;
-    private Long idProducto;    
+    @Column(name="id_producto")
+    private Long idProducto;
+    @Column(name="precio")
     private double precio;
+    @Column(name="cantidad")
     private int cantidad;    
     
     public Venta() {
